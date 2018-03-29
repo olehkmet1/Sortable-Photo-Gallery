@@ -1,0 +1,120 @@
+body{
+    background: url(../images/background.jpg) no-repeat;
+    background-size: cover;
+    font-size: 1vw;
+    color: #bd8a1e;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    margin: 0;
+    height: 100vh;
+}
+a, a:visited{
+    color: #00f;
+}
+.debug-size{
+    position: absolute;
+    bottom: 0;
+    left: 1%;
+}
+.debug-remainder{
+    position: absolute;
+    bottom: 4%;
+    left: 1%;
+}
+.title{
+    position: fixed;
+    top:0;
+    left: 0;
+    height: 80%;
+    width: 5%;
+    background: url(../images/title_large.png) no-repeat 0 5%;
+    background-size: contain;
+}
+.gallery{
+    width: 85%;
+    margin: 0 auto;
+}
+.sorting{
+    border: 0.075vw solid #4A2E20;
+    background: rgba(109, 77, 46, .3);
+    padding: 0.8vw 0.7vw;
+    margin: 1.1vw 0;
+}
+.sorting a{
+    color: #fff;
+    font-size: 0.9vw;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.125vw 2vw 0.125vw 2vw;
+    background: url(../images/check_normal.gif) no-repeat;
+    background-size: contain;
+}
+.sorting a:hover{
+    color: #e5aa2c;
+}
+.sorting a.selected{
+    color: #e5aa2c;
+    background: url(../images/check_selected.gif) no-repeat;
+    background-size: contain;
+}
+.photos .thumbnail_container{
+    position: relative;
+}
+h4{
+    margin: 0;
+    color: #6d4d2e; font-style: italic; font-size: 1vw;
+}
+.photos .thumbnail_container a.thumbnail {
+    position: absolute;
+}
+.photos .thumbnail_container a.thumbnail img {
+    width: 75px; height: 75px; border: 1px solid #6d4d2e;
+}
+
+
+@media screen and (min-width:50px) and (max-width: 500px){
+    
+    .sorting{
+        padding: 5%;
+        margin-bottom: 5%;
+    }
+    .sorting a{
+        font-size: 4vw;
+        font-weight: 400;
+        text-indent: 7%;
+        margin: 2% 0;
+    }
+    h4{
+        margin: 0;
+        color: #6d4d2e; font-style: italic; font-size: 4vw;
+        font-weight: 400;
+        color: #e5aa2c;
+        padding-bottom: 10%;
+    }
+    .sorting-text{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (min-width:501px) and (max-width: 771px){
+    .sorting-text{
+        display: grid;
+        grid-template-columns: 40% 40%;
+    }
+    .sorting a{
+        margin: 2% 0;
+        font-size: 2vw;
+        text-indent: 3%;
+    }
+    .sorting{
+        padding: 3%;
+    }
+    h4{
+        margin: 0;
+        font-size: 2vw;
+        color: #6d4d2e; font-style: italic;
+        font-weight: 400;
+        color: #e5aa2c;
+        padding-bottom: 4%;
+    }
+}
